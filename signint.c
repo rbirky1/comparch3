@@ -50,20 +50,3 @@ int fib(int n)
 	return 1;
     return (fib(n-1) + fib(n-2));
 }
-
-public class Fibonacci
-{
-    private static int counter = 0;
- 
-    public static void main(String argv[]) {
-       for (int i = 3; i < 45; i++) {
-           System.out.println("Num = " + i + "  Fib = " +
-             fibonacci(i) + "  time = " + counter);
-        }
-    }
- 
-    public static int fibonacci(int NI) {
-        if (NI <= 1) return 1;
-        return fibonacci(NI - 1) + fibonacci(NI - 2);
-    }
-}
